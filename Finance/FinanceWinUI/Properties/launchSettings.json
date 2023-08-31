@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "FinanceWinUI (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "FinanceWinUI (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

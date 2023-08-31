@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Finance",
+    "\\Finance\\FinanceClient",
+    "\\Finance\\FinanceWinUI",
+    "\\Finance\\FinanceWinUI\\Dialogs",
+    "\\Finance\\FinanceWinUI\\Pages"
+  ],
+  "SelectedNode": "\\Finance\\FinanceClient\\MainWindow.xaml",
+  "PreviewInSolutionExplorer": false
+}
