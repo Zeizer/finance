@@ -6,10 +6,11 @@
     xmlns:local="using:FinanceWinUI.Dialogs"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    mc:Ignorable="d">
     <Grid>
-        <TextBlock>Fuck！</TextBlock>
+        <StackPanel>
+            <TextBox Text="" Header="用户名"/>
+            <TextBox Text="" Header="密码"/>
+        </StackPanel>
     </Grid>
 </Page>

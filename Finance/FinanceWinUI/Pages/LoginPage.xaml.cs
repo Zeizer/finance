@@ -32,6 +32,7 @@ namespace FinanceWinUI.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
             ViewModel.Login();
             Frame.GoBack();
             

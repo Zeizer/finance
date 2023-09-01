@@ -3,9 +3,12 @@ using CommunityToolkit.Mvvm.Input;
 using Finance.Account.Controls.Commons;
 using Finance.Account.Data;
 using Finance.Account.SDK;
+using Microsoft.Windows.AppNotifications.Builder;
 using Newtonsoft.Json;
+using NuGet.Configuration;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,24 +22,63 @@ namespace FinanceWinUI.ViewModels
 
         [ObservableProperty]
         List<SampleItem> _sampleItems = new List<SampleItem>();
-
+        [ObservableProperty]
+        bool autoLogin = false;
         [ObservableProperty]
         string password = null;
         [ObservableProperty]
         string userName = null;
         [ObservableProperty]
-        SampleItem selectedItem = null;
-        [ObservableProperty]
-        long tid = 0;
+        SampleItem selectedItem = new SampleItem();
+        
         public LoginViewModel()
         {
             SampleItems = DataFactory.Instance.GetAccountCtlExecuter().GetAccountList();
+            if (ConfigurationManager.AppSettings["AutoLogin"] == "true")
+            {
+                UserName = ConfigurationManager.AppSettings["UserName"];
+                Password = ConfigurationManager.AppSettings["Password"];
+                SelectedItem = SampleItems.Where(item => item.id == long.Parse(ConfigurationManager.AppSettings["AccountID"])).FirstOrDefault();
+                AutoLogin = true;
+            }
         }
 
         [RelayCommand]
         public void Login()
         {
+            if (AutoLogin)
+            {
+                Configuration configuration = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                AddUpdateAppSettings("AutoLogin", "true");
+                AddUpdateAppSettings("UserName", UserName);
+                AddUpdateAppSettings("Password", Password);
+                AddUpdateAppSettings("AccountID", SelectedItem.id.ToString());
+                configuration.Save(ConfigurationSaveMode.Modified);
+            }
             Verification();
+        }
+
+        private void AddUpdateAppSettings(string key, string value)
+        {
+            try
+            {
+                var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                var settings = configFile.AppSettings.Settings;
+                if (settings[key] == null)
+                {
+                    settings.Add(key, value);
+                }
+                else
+                {
+                    settings[key].Value = value;
+                }
+                configFile.Save(ConfigurationSaveMode.Modified);
+                ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);
+            }
+            catch (ConfigurationErrorsException)
+            {
+                Console.WriteLine("Error writing app settings");
+            }
         }
 
 
@@ -70,7 +112,7 @@ namespace FinanceWinUI.ViewModels
                     return flag;
                 }
 
-                DataFactory.Instance.GetUserExecuter().Login(Tid, UserName, Password);
+                DataFactory.Instance.GetUserExecuter().Login(0, UserName, Password);
 
                 FinanceControlEventsManager.Instance.GetAccountSubjectListEvent += () => {
                     List<AccountSubject> auxiliaries = DataFactory.Instance.GetAccountSubjectExecuter().List();

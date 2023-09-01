@@ -10,37 +10,37 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>63fd7a36-c627-4a69-8593-7463c55744ae</PackageIdentityName>
     <PackageIdentityPublisher>CN=Administrator</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Administrator\source\repos\Zeizer\finance\Finance\FinanceWinUI\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\.Net\FinanceOne\Finance\FinanceWinUI\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Administrator\source\repos\Zeizer\finance\Finance\FinanceWinUI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>D:\.Net\FinanceOne\Finance\FinanceWinUI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\FinanceWinUI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="D:\.Net\FinanceOne\Finance\FinanceWinUI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\FinanceWinUI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\FinanceWinUI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\FinanceWinUI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\FinanceWinUI.runtimeconfig.json">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\FinanceWinUI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\FinanceWinUI.runtimeconfig.json">
       <PackagePath>FinanceWinUI.runtimeconfig.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\FinanceWinUI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\FinanceWinUI.dll">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\FinanceWinUI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\FinanceWinUI.dll">
       <PackagePath>FinanceWinUI.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\FinanceWinUI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\FinanceWinUI.dll.config">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\FinanceWinUI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\FinanceWinUI.dll.config">
       <PackagePath>FinanceWinUI.dll.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\FinanceWinUI\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\FinanceWinUI\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>FinanceWinUI.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\FinanceWinUI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\FinanceWinUI.deps.json">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\FinanceWinUI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\FinanceWinUI.deps.json">
       <PackagePath>FinanceWinUI.deps.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.21\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
@@ -769,6 +769,15 @@
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\newtonsoft.json\11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\nuget.common\6.7.0\lib\netstandard2.0\NuGet.Common.dll">
+      <PackagePath>NuGet.Common.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\nuget.configuration\6.7.0\lib\netstandard2.0\NuGet.Configuration.dll">
+      <PackagePath>NuGet.Configuration.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\nuget.frameworks\6.7.0\lib\netstandard2.0\NuGet.Frameworks.dll">
+      <PackagePath>NuGet.Frameworks.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\system.configuration.configurationmanager\7.0.0\lib\net6.0\System.Configuration.ConfigurationManager.dll">
       <PackagePath>System.Configuration.ConfigurationManager.dll</PackagePath>
     </AppxPackagedFile>
@@ -787,61 +796,61 @@
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\microsoft.windowsappsdk\1.3.230502000\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\bin\client\Finance.Account.Controls.dll">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\bin\client\Finance.Account.Controls.dll">
       <PackagePath>Finance.Account.Controls.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\bin\client\Finance.Account.Data.dll">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\bin\client\Finance.Account.Data.dll">
       <PackagePath>Finance.Account.Data.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\bin\Finance.Account.SDK.dll">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\bin\Finance.Account.SDK.dll">
       <PackagePath>Finance.Account.SDK.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\bin\server\Finance.Utils.dll">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\bin\server\Finance.Utils.dll">
       <PackagePath>Finance.Utils.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\bin\server\NPOI.dll">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\bin\server\NPOI.dll">
       <PackagePath>NPOI.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\bin\server\log4net.dll">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\bin\server\log4net.dll">
       <PackagePath>log4net.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\bin\server\NPOI.OOXML.dll">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\bin\server\NPOI.OOXML.dll">
       <PackagePath>NPOI.OOXML.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\bin\server\ICSharpCode.SharpZipLib.dll">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\bin\server\ICSharpCode.SharpZipLib.dll">
       <PackagePath>ICSharpCode.SharpZipLib.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\bin\server\NPOI.OpenXmlFormats.dll">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\bin\server\NPOI.OpenXmlFormats.dll">
       <PackagePath>NPOI.OpenXmlFormats.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\bin\server\NPOI.OpenXml4Net.dll">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\bin\server\NPOI.OpenXml4Net.dll">
       <PackagePath>NPOI.OpenXml4Net.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\bin\server\NPOI.xml">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\bin\server\NPOI.xml">
       <PackagePath>NPOI.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\bin\server\log4net.xml">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\bin\server\log4net.xml">
       <PackagePath>log4net.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\FinanceWinUI\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\FinanceWinUI\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\FinanceWinUI\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\FinanceWinUI\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\FinanceWinUI\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\FinanceWinUI\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\FinanceWinUI\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\FinanceWinUI\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\FinanceWinUI\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\FinanceWinUI\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\FinanceWinUI\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\FinanceWinUI\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\source\repos\Zeizer\finance\Finance\FinanceWinUI\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\.Net\FinanceOne\Finance\FinanceWinUI\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

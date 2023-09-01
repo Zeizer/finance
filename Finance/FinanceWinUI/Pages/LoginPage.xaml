@@ -24,7 +24,8 @@
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
             </ComboBox>
-            <Button  Click="Button_Click">登录</Button>
+            <CheckBox Content="自动登录" IsChecked="{x:Bind ViewModel.AutoLogin,Mode=TwoWay}"/>
+            <Button  Click="Button_Click"  >登录</Button>
         </StackPanel>
     </Grid>
 </Page>

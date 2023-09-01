@@ -15,6 +15,7 @@
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
           "Microsoft.WindowsAppSDK": "1.3.230502000",
           "Newtonsoft.Json": "11.0.2",
+          "NuGet.Configuration": "6.7.0",
           "System.Configuration.ConfigurationManager": "7.0.0",
           "System.Security.Permissions": "7.0.0",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "6.0.21",
@@ -970,6 +971,37 @@
           }
         }
       },
+      "NuGet.Common/6.7.0": {
+        "dependencies": {
+          "NuGet.Frameworks": "6.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NuGet.Common.dll": {
+            "assemblyVersion": "6.7.0.127",
+            "fileVersion": "6.7.0.127"
+          }
+        }
+      },
+      "NuGet.Configuration/6.7.0": {
+        "dependencies": {
+          "NuGet.Common": "6.7.0",
+          "System.Security.Cryptography.ProtectedData": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NuGet.Configuration.dll": {
+            "assemblyVersion": "6.7.0.127",
+            "fileVersion": "6.7.0.127"
+          }
+        }
+      },
+      "NuGet.Frameworks/6.7.0": {
+        "runtime": {
+          "lib/netstandard2.0/NuGet.Frameworks.dll": {
+            "assemblyVersion": "6.7.0.127",
+            "fileVersion": "6.7.0.127"
+          }
+        }
+      },
       "System.Configuration.ConfigurationManager/7.0.0": {
         "dependencies": {
           "System.Security.Cryptography.ProtectedData": "7.0.0",
@@ -1147,6 +1179,27 @@
       "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "path": "newtonsoft.json/11.0.2",
       "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+    },
+    "NuGet.Common/6.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-o3hdvub38qN4UuPWISIvdhM36liEno2o58LRnIrSucZ6+SNv4jc+Cqh/y7BfmQ+UvpqLY19yEc4123rMpp6Edg==",
+      "path": "nuget.common/6.7.0",
+      "hashPath": "nuget.common.6.7.0.nupkg.sha512"
+    },
+    "NuGet.Configuration/6.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-M1ttuwgjCNIEcgjFj3Fh/SZ/CaZY11SpxDOEOgPFUxB24K9JMGnB5BGBMOV8joleNcbwzEEY6WCVwHPYg3bb9A==",
+      "path": "nuget.configuration/6.7.0",
+      "hashPath": "nuget.configuration.6.7.0.nupkg.sha512"
+    },
+    "NuGet.Frameworks/6.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mTKaTSINpCjMHTNdaPMD/0nfHvWGetG67KzWtDJklnAp9nNwqA+t65G0v8XA/Ve35ipmPRdklxFIl3O55iTgnQ==",
+      "path": "nuget.frameworks/6.7.0",
+      "hashPath": "nuget.frameworks.6.7.0.nupkg.sha512"
     },
     "System.Configuration.ConfigurationManager/7.0.0": {
       "type": "package",
